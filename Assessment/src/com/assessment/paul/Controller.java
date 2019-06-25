@@ -3,8 +3,8 @@ package com.assessment.paul;
 public class Controller {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Name myName = new Name("Mr","Paul","Herron");
+		
 	}
 
 }
