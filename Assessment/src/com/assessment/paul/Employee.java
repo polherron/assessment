@@ -41,6 +41,78 @@ public abstract class Employee {
 	public Employee() {
 		super();
 	}
+	/**
+	 * @return the uniqueID
+	 */
+	int getUniqueID() {
+		return uniqueID;
+	}
+	/**
+	 * @param uniqueID the uniqueID to set
+	 */
+	void setUniqueID(int uniqueID) {
+		this.uniqueID = uniqueID;
+	}
+	/**
+	 * @return the name
+	 */
+	Name getName() {
+		return name;
+	}
+	/**
+	 * @param name the name to set
+	 */
+	void setName(Name name) {
+		this.name = name;
+	}
+	/**
+	 * @return the department
+	 */
+	Department getDepartment() {
+		return department;
+	}
+	/**
+	 * @param department the department to set
+	 */
+	void setDepartment(Department department) {
+		this.department = department;
+	}
+	/**
+	 * @return the dateStarted
+	 */
+	LocalDate getDateStarted() {
+		return dateStarted;
+	}
+	/**
+	 * @param dateStarted the dateStarted to set
+	 */
+	void setDateStarted(LocalDate dateStarted) {
+		this.dateStarted = dateStarted;
+	}
+	/**
+	 * @return the phoneNumber
+	 */
+	String getPhoneNumber() {
+		return phoneNumber;
+	}
+	/**
+	 * @param phoneNumber the phoneNumber to set
+	 */
+	void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	/**
+	 * @return the monthlyPay
+	 */
+	double getMonthlyPay() {
+		return monthlyPay;
+	}
+	/**
+	 * @param monthlyPay the monthlyPay to set
+	 */
+	void setMonthlyPay(double monthlyPay) {
+		this.monthlyPay = monthlyPay;
+	}
 	@Override
 	public String toString() {
 		return "Employee [uniqueID=" + uniqueID + ", name=" + name + ", department=" + department + ", dateStarted="
