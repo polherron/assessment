@@ -1,31 +1,28 @@
 package com.assessment.paul;
 
-public class Departmeent {
+public class Department {
 	int departmentID;
 	String departmentName;
 	int numberOfEmployees;
-	
-	
-	/**
-	 * 
-	 */
-	public Departmeent() {
-		super();
-	}
-
 
 	/**
-	 * @param departmentID
-	 * @param departmentName
-	 * @param numberOfEmployees
-	 */
-	public Departmeent(int departmentID, String departmentName, int numberOfEmployees) {
-		super();
-		this.departmentID = departmentID;
-		this.departmentName = departmentName;
-		this.numberOfEmployees = numberOfEmployees;
-	}
+		 * 
+		 */
+		public Department() {
+			super();
+		}
 
+	/**
+		 * @param departmentID
+		 * @param departmentName
+		 * @param numberOfEmployees
+		 */
+		public Department(int departmentID, String departmentName, int numberOfEmployees) {
+			super();
+			this.departmentID = departmentID;
+			this.departmentName = departmentName;
+			this.numberOfEmployees = numberOfEmployees;
+		}
 
 	/**
 	 * @return the departmentID
@@ -34,14 +31,12 @@ public class Departmeent {
 		return departmentID;
 	}
 
-
 	/**
 	 * @param departmentID the departmentID to set
 	 */
 	void setDepartmentID(int departmentID) {
 		this.departmentID = departmentID;
 	}
-
 
 	/**
 	 * @return the departmentName
@@ -50,14 +45,12 @@ public class Departmeent {
 		return departmentName;
 	}
 
-
 	/**
 	 * @param departmentName the departmentName to set
 	 */
 	void setDepartmentName(String departmentName) {
 		this.departmentName = departmentName;
 	}
-
 
 	/**
 	 * @return the numberOfEmployees
@@ -66,7 +59,6 @@ public class Departmeent {
 		return numberOfEmployees;
 	}
 
-
 	/**
 	 * @param numberOfEmployees the numberOfEmployees to set
 	 */
@@ -74,13 +66,11 @@ public class Departmeent {
 		this.numberOfEmployees = numberOfEmployees;
 	}
 
-
 	@Override
 	public String toString() {
 		return "Departmeent [departmentID=" + departmentID + ", departmentName=" + departmentName
 				+ ", numberOfEmployees=" + numberOfEmployees + "]";
 	}
-
 
 	@Override
 	public int hashCode() {
@@ -92,7 +82,6 @@ public class Departmeent {
 		return result;
 	}
 
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -101,7 +90,7 @@ public class Departmeent {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Departmeent other = (Departmeent) obj;
+		Department other = (Department) obj;
 		if (departmentID != other.departmentID)
 			return false;
 		if (departmentName == null) {
@@ -113,7 +102,4 @@ public class Departmeent {
 			return false;
 		return true;
 	}
-	
-	
-	
 }
